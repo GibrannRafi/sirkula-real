@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f2e8c6;
+  overflow-x: hidden;
+}
+/* NAVBAR  */
+header {
+  background-color: #800000;
+  padding: 1.25rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.logo {
+  color: #f2e8c6;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 3.75rem;
+}
+
+.logo img {
+  height: 3.125rem;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+
+ul {
+  justify-items: center;
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+  margin-right: 1.25rem;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #f2e8c6;
+  color: #800000;
+  padding: 0.5rem 1rem;
+  width: 5.625rem;
+  font-size: 1rem;
+  margin-right: 0.625rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  text-align: center;
+  box-shadow: 0px 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #f2d2a9;
+  transition: all 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0.375rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.login-btn a {
+  color: #800000;
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 10rem;
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+/* End Navbar */
+
+.about-us {
+  text-align: center;
+  padding: 3.125rem 1.25rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  color: #000000;
+}
+.judul-header {
+  margin-bottom: 3%;
+  line-height: 4rem;
+}
+
+.isi-header {
+  font-size: 1rem;
+  margin-bottom: 5%;
+}
+
+.about-header p {
+  color: #000000;
+  opacity: 0.5; /* Konversi nilai opacity */
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.team-member {
+  border-radius: 0.625rem; /* 10px */
+  text-align: center;
+  width: 100%; /* Mengurangi ukuran agar lebih fleksibel */
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member img {
+  background-color: white;
+  width: 100%; /* 120px */
+  height: 70%; /* 120px */
+  object-fit: cover;
+  margin-bottom: 0.9375rem; /* 15px */
+  border-radius: 10%;
+}
+
+.team-member h3 {
+  text-align: left;
+  color: #000000;
+  margin-bottom: 0.3125rem; /* 5px */
+}
+
+.team-member p {
+  text-align: left;
+  color: #555;
+}
+
+/* About company section */
+.about-company {
+  background-color: #800000;
+  color: white;
+  padding: 3.125rem 1.25rem; /* 50px 20px */
+  text-align: center;
+}
+.judul-about {
+  color: #f2e8c6;
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
+
+.company-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.company-text {
+  font-size: 2.2rem;
+  text-align: justify;
+  color: #f2e8c6;
+}
+
+.company-image img {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2.25rem;
+  -webkit-border-radius: 2.25rem;
+  -moz-border-radius: 2.25rem;
+  -ms-border-radius: 2.25rem;
+  -o-border-radius: 2.25rem;
+}
+
+/* Contact us section */
+.contact-us {
+  background-color: #f2e8c6;
+  padding: 3.125rem 1.25rem; /* 50px 20px */
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  font-size: 2rem;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.isi-contact {
+  color: #000000;
+  opacity: 50%;
+}
+
+.contact-text .contact-btn {
+  background-color: #7a0000;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  /*10px20px*/
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  margin-bottom: 0.625rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+}
+
+.contact-btn:hover {
+  background-color: #f2d2a9;
+  color: #7a0000;
+}
+
+.contact-image img {
+  width: 30rem;
+  max-width: 30rem; /* Membatasi lebar gambar */
+  height: auto; /* Proporsi gambar */
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+}
+
+/* Footer section */
+footer {
+  background-color: #800000;
+  color: #fff;
+}
+
+.bawah {
+  color: #f2e8c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 6.25rem;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+
+.logo {
+  margin-right: 0.3125rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text h2 {
+  margin: 0;
+  font-size: 1.875rem;
+  color: #f2e8c6;
+  margin-right: 9.375rem;
+}
+
+.logo-text p {
+  margin: 0;
+  margin-top: 0.3125rem;
+  color: #f2e8c6;
+}
+
+.mid {
+  font-size: 0.6875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  margin-right: 0.5rem;
+  width: 1.5625rem;
+  height: auto;
+}
+
+.right {
+  font-size: 0.875rem;
+  margin-right: 1.875rem;
+}
+
+.right a {
+  color: #f2e8c6;
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+.garis2 {
+  border: 0.0625rem solid #f2e8c6;
+  padding: 0.125rem;
+  border-radius: 0.5rem;
+  max-width: 87.5rem;
+  margin: auto;
+  padding: 0 1.25rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.625rem;
+}
+
+.social-icons img {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 0.125rem solid #f2e8c6;
+  padding: 0.3125rem;
+  background-color: #800000;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #f2e8c6;
+  font-size: 0.5rem;
+}

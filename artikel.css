@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f2e8c6;
+  overflow-x: hidden;
+}
+/* NAVBAR  */
+header {
+  background-color: #800000;
+  padding: 1.25rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.logo {
+  color: #f2e8c6;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 3.75rem;
+}
+
+.logo img {
+  height: 3.125rem;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+
+ul {
+  justify-items: center;
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+  margin-right: 1.25rem;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #f2e8c6;
+  color: #800000;
+  padding: 0.5rem 1rem;
+  width: 5.625rem;
+  font-size: 1rem;
+  margin-right: 0.625rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  text-align: center;
+  box-shadow: 0px 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #f2d2a9;
+  transition: all 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0.375rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.login-btn a {
+  color: #800000;
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 10rem;
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+
+/* SECTION */
+.artikeljudul {
+  padding-left: 7rem;
+  padding-top: 4rem;
+
+  color: #800000;
+  font-size: 1.8rem;
+  margin: auto;
+}
+
+.judul2 {
+  text-align: center;
+  color: #800000;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.orgsakit img {
+  text-align: center;
+  padding-top: 3rem;
+  width: 50%;
+
+  border-radius: 10%;
+}
+
+.adimin {
+  padding-top: 5px;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 14px;
+  color: #c39b73;
+}
+.adimin img {
+  padding-left: 20px;
+  padding-right: 5px;
+  width: 30x;
+  height: 20px;
+}
+
+.isi {
+  margin: auto;
+  padding-top: 40px;
+  text-align: center;
+  align-items: center;
+  color: #800000;
+  width: 70%;
+  line-height: 2rem;
+  max-height: max-content;
+  padding-bottom: 5%;
+}
