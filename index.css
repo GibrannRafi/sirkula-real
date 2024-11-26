@@ -9,6 +9,7 @@ body {
   background-color: #f2e8c6;
   overflow-x: hidden;
   width: 100%;
+  max-width: 80rem;
 }
 
 /* Splash Screen Styles */
