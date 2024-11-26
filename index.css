@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #F2E8C6;
+  background-color: #f2e8c6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Splash Screen Styles */
@@ -103,8 +102,11 @@ ul {
   list-style: none;
   display: flex;
   gap: 1.25rem;
+
   margin-left: auto;
-  margin-right: 1.25rem;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 ul li a {
@@ -112,7 +114,7 @@ ul li a {
   text-decoration: none;
   font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .login-btn {
@@ -146,42 +148,24 @@ ul li a {
   font-size: 0.9375rem;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 10rem;
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li a {
-  color: black;
-}
-
+/* SECTION HERO */
 .hero {
   text-align: center;
-  padding: 4.375rem 1.25rem;
 }
 
 .hero h1 {
   color: #800000;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 0;
   line-height: 1.1;
 }
 
+.hero-text {
+  margin-top: 5rem;
+}
 .slightest-help {
   margin-bottom: 5%;
+
   font-size: large;
 }
 
@@ -191,15 +175,15 @@ ul li a {
 }
 
 .hero p {
-  color: #2c2c2c;
-  font-size: 1.2rem;
+  color: #2c2c2cb4;
+  font-size: 1rem;
   margin: 0.3125rem 0;
-  margin-top : 0.625rem;
+  margin-top: 0.625rem;
 }
 
 .complete-info {
   margin-bottom: 0;
-  padding-top:1.5625rem;
+  padding-top: 1.5625rem;
 }
 
 .various-hospitals {
@@ -209,76 +193,52 @@ ul li a {
 
 .get-started-btn {
   background-color: #7a0000;
-  margin-top: 3.125rem;
   color: #fff;
-  padding: 0.9375rem 1.25rem;
   border: none;
+  width: 15rem;
+  padding: 1rem 1rem;
   border-radius: 0.3125rem;
   font-size: 1.125rem;
   cursor: pointer;
   box-shadow: 0.125rem 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
-  transform: translateY(-5.625rem);
-  -webkit-transform: translateY(-5.625rem);
-  -moz-transform: translateY(-5.625rem);
-  -ms-transform: translateY(-5.625rem);
-  -o-transform: translateY(-5.625rem);
-  -webkit-border-radius: 0.3125rem;
-  -moz-border-radius: 0.3125rem;
-  -ms-border-radius: 0.3125rem;
-  -o-border-radius: 0.3125rem;
 }
 
 .get-started-btn:hover {
   background-color: #b30000;
 }
-
+.btn-started {
+  margin-top: 9rem;
+}
 .hands {
   display: flex;
-  justify-content: center;
-  margin-top: 0.0625rem;
+  width: 100%;
+  height: 20rem;
 }
 
 .hands img {
   width: 43.75rem;
-  margin: 0 1.25rem;
-}
-
-.hands .get-started-btn{
-  width: 15.625rem;
-  color: #F2E8C6;
-  align-items: center;
-  margin-top: 80%;
-  font-size: 1.875rem;
-  font-weight: bold;
-}
-
-.hands .get-started-btn:hover{
-  transition: all  0.5s  ;
-  font-size: 2.1875rem;
-
 }
 
 /* CARD WHAT WE DO CSS */
-
 
 /* Card Container */
 
 .judul1 {
   background-color: #800000;
-  justify-content: center;
-  align-items: center;
+
   text-align: center;
 }
 
 .judul1 h1 {
-  color: #F2E8C6;
+  color: #f2e8c6;
   padding-top: 3%;
+  font-size: 3rem;
 }
 
 .bawahjudul p {
   color: #f2e8c6de;
   margin-bottom: 0%;
-
+  font-size: 0.9rem;
 }
 .card-container {
   display: flex;
@@ -291,81 +251,76 @@ ul li a {
 
 /* Blood Card Styling */
 .blood-card {
-  background-color: #F2E8C6;
+  background-color: #f2e8c6;
   color: #2c2c2c;
   width: 70%;
   margin-left: 15%;
-  padding: 3rem 3rem;
+  padding-top: 2rem;
   border-radius: 2rem;
   text-align: center;
   position: relative;
-  height: 40%;
+  height: 23rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
 }
 
-.blood-card:hover{
+.blood-card:hover {
   transform: scale(1.03);
   opacity: 1;
 }
 
 /* Icon Styling */
 .icon {
-  background-color: #F2E8C6;
+  background-color: #f2e8c6;
   padding: 1.25rem;
   border-radius: 50%;
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 1.25rem;
-
 }
 
 .icon img {
-  width: 7.125rem;
-  height: 7.125rem;
+  width: 5.125rem;
+  height: 5.125rem;
+  margin-top: 2rem;
 }
 
-/* Title Styling */
 .blood-card h2 {
   color: #2c2c2c;
-  font-size: 2rem;
-  margin-bottom: 0.625rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
-/* Description Styling */
 .blood-card p {
   color: #2c2c2cc7;
   font-size: 0.7em;
-  line-height: 2;
-  margin-bottom: 1.875rem;
+  line-height: 1.5;
   width: 80%;
   margin-left: 10%;
-
 }
 
-
-/* Arrow Button Styling */
 .arrow-button {
-  background-color: #F2E8C6;
+  background-color: #f2e8c6;
   color: #800000;
-  width: 3.125rem;
+  width: 4.125rem;
   border: 0.1875rem #800000 solid;
-  height: 3.125rem;
+  height: 4.125rem;
   border-radius: 50%;
   display: flex;
-
+  margin-top: 2rem;
   justify-content: center;
   align-items: center;
   margin: 0.625rem auto;
   font-size: 1.5rem;
   cursor: pointer;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  margin-top: 4rem;
 }
 
 .arrow-button span {
@@ -388,68 +343,66 @@ ul li a {
 }
 
 .slider .owl-item.active.center .slider-card {
-transform: scale(1.15);
-opacity: 1;
+  transform: scale(1.15);
+  opacity: 1;
 }
 
 .slider-card {
-padding: 0%;
-display: flex;
-margin: 5.625rem 1.875rem 7.5rem 1.875rem;
-max-width: 82rem;
-border-radius: 3.125rem;
-transform: scale(0.9);
-opacity: 1;
-transition: all 0.3s;
-align-items: center;
+  padding: 0%;
+  display: flex;
+  margin: 5.625rem 1.875rem 7.5rem 1.875rem;
+  max-width: 82rem;
+  border-radius: 3.125rem;
+  transform: scale(0.9);
+  opacity: 1;
+  transition: all 0.3s;
+  align-items: center;
 }
 
 .slider-card img {
-border-radius: 3.125rem;
-height: 25.125rem;
-width: 40rem;
-background-size: contain;
-box-shadow: 0rem 0.3125rem 2.0625rem 0.375rem #000000;
+  border-radius: 3.125rem;
+  height: 17rem;
+  width: 40rem;
+  background-size: contain;
+  box-shadow: 0rem 0.3125rem 2.0625rem 0.375rem #000000;
 }
 
 .owl-nav .owl-prev {
-position: absolute;
-top: calc(50% - 1.5625rem);
-left: 0;
-opacity: 1;
-font-size: 1.875rem !important;
-z-index: 10;
+  position: absolute;
+  top: calc(50% - 1.5625rem);
+  left: 0;
+  opacity: 1;
+  font-size: 1.875rem !important;
+  z-index: 10;
 }
 
 .owl-nav .owl-next {
-position: absolute;
-top: calc(50% - 1.5625rem);
-right: 0;
-opacity: 1;
-font-size: 1.875rem !important;
-z-index: 10;
+  position: absolute;
+  top: calc(50% - 1.5625rem);
+  right: 0;
+  opacity: 1;
+  font-size: 1.875rem !important;
+  z-index: 10;
 }
 .owl-dots {
-text-align: center;
+  text-align: center;
 }
 .owl-dots .owl-dot {
-height: 0.625rem;
-width: 0.625rem;
-border-radius: 0.625rem;
-background: #D9D9D9 !important;
-margin-left: 0.1875rem;
-margin-right: 0.1875rem;
-outline: none;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 0.625rem;
+  background: #d9d9d9 !important;
+  margin-left: 0.1875rem;
+  margin-right: 0.1875rem;
+  outline: none;
 }
 .owl-dots .owl-dot.active {
-background: #800000 !important;
+  background: #800000 !important;
 }
-
-
 
 .what-we-do {
   background-color: #7a0000;
-  color: #F2E8C6;
+  color: #f2e8c6;
   text-align: center;
   padding: 3.125rem 0;
   margin-top: 3.125rem;
@@ -458,13 +411,13 @@ background: #800000 !important;
 .what-we-do h2 {
   font-size: 2rem;
   margin-bottom: 1.25rem;
-  color: #F2E8C6;
+  color: #f2e8c6;
 }
 
 .what-we-do p {
   font-size: 1.2rem;
   margin-bottom: 1.25rem;
-  color: #F2E8C6;
+  color: #f2e8c6;
 }
 
 .services {
@@ -474,7 +427,7 @@ background: #800000 !important;
 }
 
 .service {
-  background-color: #F2E8C6;
+  background-color: #f2e8c6;
   color: #2c2c2c;
   padding: 1.25rem;
   border-radius: 0.625rem;
@@ -503,8 +456,8 @@ background: #800000 !important;
 
 /* General styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #F2E8C6;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2e8c6;
 }
 
 h2 {
@@ -528,13 +481,13 @@ a {
 }
 
 .explore-locations h2 {
-  color: #2C2C2C;
+  color: #2c2c2c;
   font-size: 2rem; /* Memperbesar ukuran teks judul */
   margin-bottom: 1.25rem;
 }
 
 .explore-locations p {
-  color: #2C2C2C;
+  color: #2c2c2c;
   opacity: 50%;
   font-size: 1.2rem; /* Memperbesar ukuran teks deskripsi */
   line-height: 1;
@@ -554,21 +507,20 @@ a {
 
 .articles-section {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #F2E8C6;
-  max-width: 1400px;
-  margin: auto;
+  margin-bottom: 5rem;
+  background-color: #f2e8c6;
 }
 
 .articles-section h2 {
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .articles {
   display: flex;
   gap: 2rem;
-  margin-left: 15%;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 1.3rem;
+  margin-left: 9rem;
 }
 
 .article-card {
@@ -580,7 +532,7 @@ a {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.article-card:hover{
+.article-card:hover {
   transform: scale(1.04);
   opacity: 1;
 }
@@ -599,26 +551,24 @@ a {
 }
 
 .article-content p {
-  color: #F2E8C6;
+  color: #f2e8c6;
   font-size: 10px;
 }
 
 .article-content h3 {
   font-size: 16px;
-  color: #FFF5E1;
+  color: #fff5e1;
   margin: 10px 0;
 }
 
 .article-content a {
   font-size: 14px;
-  color: #F2E8C6;
+  color: #f2e8c6;
   text-decoration: underline;
   text-underline-position: auto;
   letter-spacing: 0.5px;
   font-weight: 100;
-
 }
-
 
 /* Footer */
 footer {
@@ -627,7 +577,7 @@ footer {
 }
 
 .bawah {
-  color: #F2E8C6;
+  color: #f2e8c6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -659,14 +609,14 @@ footer {
 .logo-text h2 {
   margin: 0;
   font-size: 1.875rem;
-  color: #F2E8C6;
+  color: #f2e8c6;
   margin-right: 9.375rem;
 }
 
 .logo-text p {
   margin: 0;
   margin-top: 0.3125rem;
-  color: #F2E8C6;
+  color: #f2e8c6;
 }
 
 .mid {
@@ -692,7 +642,7 @@ footer {
 }
 
 .right a {
-  color: #F2E8C6;
+  color: #f2e8c6;
   text-decoration: none;
 }
 
@@ -701,7 +651,7 @@ footer {
 }
 
 .garis2 {
-  border: 0.0625rem solid #F2E8C6;
+  border: 0.0625rem solid #f2e8c6;
   padding: 0.125rem;
   border-radius: 0.5rem;
   max-width: 87.5rem;
@@ -720,14 +670,13 @@ footer {
   height: 1.875rem;
   margin: 0 0.5rem;
   border-radius: 50%;
-  border: 0.125rem solid #F2E8C6;
+  border: 0.125rem solid #f2e8c6;
   padding: 0.3125rem;
   background-color: #800000;
 }
 
 .footer-bottom {
   text-align: center;
-  color: #F2E8C6;
+  color: #f2e8c6;
   font-size: 0.5rem;
 }
-

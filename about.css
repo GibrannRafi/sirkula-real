@@ -41,8 +41,8 @@ ul {
   list-style: none;
   display: flex;
   gap: 1.25rem;
+
   margin-left: auto;
-  margin-right: 1.25rem;
 }
 
 ul li a {
@@ -51,6 +51,7 @@ ul li a {
   font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-weight: 700;
 }
 
 .login-btn {
@@ -82,28 +83,6 @@ ul li a {
   color: #800000;
   text-decoration: none;
   font-size: 0.9375rem;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 10rem;
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li a {
-  color: black;
 }
 /* End Navbar */
 
@@ -178,7 +157,7 @@ ul li a {
 }
 .judul-about {
   color: #f2e8c6;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 5%;
 }
 
@@ -186,15 +165,16 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .company-text {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   text-align: justify;
   color: #f2e8c6;
+  line-height: 2;
 }
 
 .company-image img {
@@ -210,7 +190,7 @@ ul li a {
 /* Contact us section */
 .contact-us {
   background-color: #f2e8c6;
-  padding: 3.125rem 1.25rem; /* 50px 20px */
+  padding: 5rem 3rem;
   text-align: center;
 }
 
@@ -228,8 +208,9 @@ ul li a {
 }
 
 .isi-contact {
-  color: #000000;
-  opacity: 50%;
+  color: #0000008f;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .contact-text .contact-btn {
@@ -241,12 +222,23 @@ ul li a {
   border-radius: 0.3125rem;
   cursor: pointer;
   margin-bottom: 0.625rem;
-  -webkit-border-radius: 0.3125rem;
-  -moz-border-radius: 0.3125rem;
-  -ms-border-radius: 0.3125rem;
-  -o-border-radius: 0.3125rem;
 }
 
+.contact-cuy {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.contact-cuy p {
+  font-size: 1rem;
+  justify-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.garis5 {
+  border: 2px solid #7a0000;
+  margin-top: 1rem;
+}
 .contact-btn:hover {
   background-color: #f2d2a9;
   color: #7a0000;
@@ -257,10 +249,6 @@ ul li a {
   max-width: 30rem; /* Membatasi lebar gambar */
   height: auto; /* Proporsi gambar */
   border-radius: 0.625rem;
-  -webkit-border-radius: 0.625rem;
-  -moz-border-radius: 0.625rem;
-  -ms-border-radius: 0.625rem;
-  -o-border-radius: 0.625rem;
 }
 
 /* FOOTER SECTION */
@@ -337,7 +325,7 @@ footer {
 
 .garis {
   width: 9rem 0%;
-  border: 0.0625rem solid #F2E8C6;
+  border: 0.0625rem solid #f2e8c6;
   margin: auto;
 }
 .content-3 {
